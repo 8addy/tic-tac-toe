@@ -3,6 +3,18 @@
 button {cursor: pointer;}
 .d-none {display: none;}
 
+.btn {
+  border: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 7px 20px;
+  font-size: 18px;
+  background-color: #000;
+  transition: background-color linear 300ms;
+  margin: 20px 0;
+}
+.btn:hover {background-color: #2a2a2a;}
+
 .App {
   min-height: 100vh;
   height: 100%;
@@ -40,18 +52,6 @@ button {cursor: pointer;}
 .square-filled {background-color: #ddd!important;}
 .square-filled:hover {cursor: not-allowed}
 
-.footer button {
-  margin: 10px;
-  border: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 5px 20px;
-  font-size: 18px;
-  background-color: transparent;
-  transition: background-color linear 300ms;
-}
-
-.footer button:hover {background-color: #2a2a2a;}
 
 
 .gameOver {
@@ -68,17 +68,6 @@ button {cursor: pointer;}
   font-size: 50px;
   text-shadow: 0px 0px 6px #0196ff;
 }
-.gameOver button {
-  background: #000;
-  padding: 7px 20px;
-  color: #fff;
-  font-size: 18px;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  transition: background-color linear 300ms;
-  margin-top: 20px;
-}
-.gameOver button:hover {background: #121212;}
 
 .score {
   display: flex;

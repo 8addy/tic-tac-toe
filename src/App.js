@@ -3,6 +3,7 @@ import './App.css';
 import Game from './components/Game';
 import GameOver from './components/Game/GameOver';
 import Score from './components/Game/Score';
+import Button from './components/utils/Button';
 import { makeBoard, winningConditions } from './helpers';
 
 const PLAYER_X = "X";
@@ -69,7 +70,7 @@ const App = () => {
         <Score playerx={PLAYER_X} playero={PLAYER_O} gameScore={gameScore} />
         <Game board={board} handleClick={handleClick} />
         <div className='footer'>
-          <button onClick={handleReset}>Reset</button>
+          <Button onClick={handleReset}>Reset</Button>
         </div>
     </div>
   );
